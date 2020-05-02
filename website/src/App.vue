@@ -1,34 +1,28 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      dark
-    >
+    <v-app-bar app dark :inverted-scroll="true">
+
+      <v-spacer />
       <v-btn large text to="/">MarcelS.</v-btn>
-      <spacer/>
       <v-btn small text to="Video">Video</v-btn>
       <v-btn small text to="Photo">Photo</v-btn>
       <v-btn small text to="Projekt">Projekts</v-btn>
-
-  
     </v-app-bar>
 
     <v-content>
-      <Router-view/>
+      <Router-view />
     </v-content>
   </v-app>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
 
-  components: {
-  },
+  components: {},
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
